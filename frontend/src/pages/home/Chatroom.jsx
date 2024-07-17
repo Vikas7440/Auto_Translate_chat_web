@@ -6,7 +6,15 @@ const Chatroom = () => {
     const params = useParams();
     console.log(params)
     return (
-        <div className='flex sm:h-[450px] md:h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter '>
+        <div className='flex sm:h-[450px] md:h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter '
+            style={{
+                overflow: "hidden",
+                width: "100%",
+                height: "100%",
+                background: 'linear-gradient(177.9deg, rgb(62 61 67) 3.6%, rgb(26 30 40) 50.8%)', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+
+            }}
+            >
             <MessageContainer />
 
         </div>
