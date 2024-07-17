@@ -4,7 +4,9 @@ import SearchInput from "./SearchInput";
 import Side from "./Side";
 const Sidebar = () => {
 	return (
-		<div className='border-r border-slate-500 p-4 flex flex-col'>
+		<div className='border-r border-slate-500 p-4 flex flex-col'
+		style={{ width: "100%" }}
+		>
 			<Side />
 			<SearchInput />
 			<div className='divider px-3'></div>
