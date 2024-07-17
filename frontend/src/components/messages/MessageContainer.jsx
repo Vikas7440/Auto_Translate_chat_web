@@ -21,7 +21,7 @@ const MessageContainer = () => {
 
 	return (
 		<div className='md:min-w-[450px] flex flex-col'
-			style={{ width: "100%" }}
+			style={{ width: "100%",height: "100%" }}
 		>
 			{!selectedConversation ? (
 				<NoChatSelected />
