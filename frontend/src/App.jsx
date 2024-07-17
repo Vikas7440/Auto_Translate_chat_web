@@ -10,7 +10,7 @@ import Chatroom from "./pages/home/Chatroom";
 function App() {
 	const { authUser } = useAuthContext();
 	return (
-		<div className='p-4 h-screen flex items-center justify-center'>
+		<div className='p-4 v-screen flex items-center justify-center'>
 			<Routes>
 				<Route path='/' element={authUser ? <Home /> : <Navigate to={"/login"} />} />
 				<Route path="/chatroom/:slug" element={<Chatroom />} />
